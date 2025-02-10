@@ -1,0 +1,14 @@
+/* bugSolution.css */
+
+.container {
+  width: calc((100% - 10px) + 5em); /*Correct: Added parentheses to ensure correct order*/
+}
+
+/*Or, for better clarity and maintainability, pre-calculate the value*/
+.container {
+  width: 500px; /*Example value. Adjust according to the desired width.*/
+}
+/*Another solution, to handle unit issues, is to convert to a common unit*/
+.container {
+  width: calc(100% - 10px + 50px); /*Convert em to px */
+}
